@@ -1,0 +1,350 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+body {
+  background: url("../img/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav form button {
+  white-space: nowrap;
+}
+.mainDivContainer{
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+
+.mainSection {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#currentWeather {
+  width: 70vw;
+  max-width: 1000px;
+}
+
+.homeContainer {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid gray;
+  border-radius: 8px;
+  width: 70vw;
+  max-width: 1000px;
+  background-color: rgb(20 20 20 / 30%);
+}
+.homeContainer h3 {
+  border: 1px solid gray;
+  margin: -21px -21px;
+  margin-bottom: 21px;
+  padding: 11px 15px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background: darkgray;
+  background: rgb(7, 7, 7, 0.6);
+}
+.homeCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.homeMinMax {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.homeMinMax div {
+  font-size: 20px;
+  width: 45%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card1 {
+  margin-top: 20px;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid gray;
+  border-radius: 8px;
+  background-color: rgb(20 20 20 / 30%);
+  width: 32%;
+}
+
+.card1 .item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 20px;
+  border-bottom: 1px solid white;
+  margin-top: 10px;
+}
+
+.weakyly {
+  border: 1px solid gray;
+  margin-top: 20px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  width: 70vw;
+  max-width: 1000px;
+  background-color: rgb(20 20 20 / 30%);
+}
+.heading {
+  border: 1px solid gray;
+  margin: -21px -21px;
+  margin-bottom: 21px;
+  padding: 11px 0px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background: darkgray;
+  background: rgb(7, 7, 7, 0.6);
+}
+.clearHourlyHumidity {
+  display: none;
+}
+
+.dayWiseCard {
+  display: flex;
+  flex-direction: column;
+}
+
+.dayWiseCard div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+  padding: 5px;
+}
+
+.dayWiseCard h2,
+.dayWiseCard p {
+  width: 25%;
+  font-size: 20px;
+}
+
+.clearWeather {
+  display: block;
+}
+.clearHumidity {
+  display: block;
+}
+.clearMainWeather {
+  display: none;
+}
+.about{
+  background: rgba(0,0,0,0.2);
+  width: 90vw;
+  margin: 5vh 5vw;
+  padding: 10px 20px;
+  border: 1px solid gray;
+  border-radius: 7px;
+  margin-top: 75px;
+}
+footer {
+  width: 100vw;
+  padding: 20px;
+  background: dimgray;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  margin-top: 20px;
+  position: fixed;
+  bottom: 0;
+}
+.generateSpace{
+  height:1px
+}
+
+@media (max-width: 1000px) {
+  .homeMinMax {
+    flex-direction: column;
+  }
+  .homeMinMax div {
+    width: 100%;
+    border: 0;
+    margin: 0;
+  }
+  .clearHumidity {
+    display: block;
+  }
+  .clearRain {
+    display: none;
+  }
+  .clearWeather {
+    display: none;
+  }
+  .clearMainWeather {
+    display: block;
+  }
+  .clearHourlyHumidity {
+    display: inline;
+  }
+  .cards {
+    flex-direction: column;
+  }
+  .card1 {
+    width: 100%;
+  }
+}
+@media (max-width: 700px) {
+  .dayWiseCard h2,
+  .dayWiseCard p {
+    width: 33%;
+  }
+  .clearHumidity {
+    display: none;
+  }
+  .clearRain {
+    display: none;
+  }
+  .clearWeather {
+    display: none;
+  }
+  .clearMainWeather {
+    display: block;
+  }
+  nav form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  nav form input,nav form button{
+    margin-top: 10px;
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .weakyly {
+    width: 90vw;
+  }
+  #currentWeather {
+    width: 90vw;
+  }
+  .homeCard {
+    flex-direction: column;
+  }
+  .homeCard div {
+    display: flex;
+  }
+  .homeContainer {
+    text-align: center;
+    width: 90vw;
+  }
+  .clearHourlyHumidity {
+    display: none;
+  }
+  .dayWiseCard h2 {
+    width: 50%;
+    text-align: left;
+  }
+  .dayWiseCard p {
+    width: 50%;
+    text-align: left;
+  }
+  .clearMainWeather {
+    display: none;
+  }
+  .homeMinMax div {
+    width: 100%;
+  }
+}
+@media (max-width: 300px) {
+  .homeCard div {
+    flex-direction: column;
+  }
+  img {
+    display: block;
+    margin: auto;
+  }
+}
+
+/* HourWise and weakwise styles */
+#accordion {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#accordion h1 {
+  text-align: left;
+  width: 70vw;
+  margin: 20px 0px 10px 15px;
+  max-width: 1000px;
+}
+.accordion-header {
+  color: black;
+}
+.accordion-button p {
+  color: black;
+  text-decoration: none;
+  width: 33%;
+  margin: auto;
+}
+.accordion-item {
+  margin-top: 5px;
+  width: 70vw;
+  max-width: 1000px;
+}
+.accordion-body {
+  display: flex;
+  flex-wrap: wrap;
+}
+.accordion-body p {
+  color: black;
+}
+.accordion-body div {
+  display: flex;
+  flex-direction: row;
+  width: 44%;
+  justify-content: space-between;
+  margin: 5px 3%;
+  border-bottom: 1px solid black;
+}
+@media (max-width: 800px) {
+  .clearHourlyHumidity {
+    display: none;
+  }
+  .accordion-item {
+    width: 90vw;
+  }
+  #accordion h1 {
+    width: 90vw;
+  }
+}
+@media (max-width: 550px) {
+  .accordion-button p {
+    width: 50%;
+  }
+  .clearHourlyWeather {
+    display: none;
+  }
+  .accordion-body div {
+    width: 90%;
+  }
+}

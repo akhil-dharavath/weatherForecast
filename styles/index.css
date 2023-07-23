@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+}
+body {
+  background: url("../img/photo-1491002052546-bf38f186af56.jpg") no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.formContainer {
+  border: 1px solid white;
+  width: 400px;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+header {
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+  padding: 16px 15px;
+  border-bottom: 1px solid #ccc;
+  cursor: default;
+}
+section {
+  width: 400px;
+  padding: 25px;
+}
+input {
+  width: 243px;
+  height: 55px;
+  border: none;
+  outline: 1px solid white;
+  font-size: 22px;
+  border-radius: 7px;
+  padding: 0px 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+}
+input::placeholder {
+  color: rgb(196, 195, 195);
+}
+input:is(:focus, :valid) {
+  outline: 1px solid white;
+  color: white;
+}
+button {
+  height: 55px;
+  border: none;
+  outline: 1px solid white;
+  font-size: 22px;
+  border-radius: 7px;
+  color: white;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.5);
+}
+button:hover {
+  background: rgba(0, 0, 0, 0.9);
+  outline: 2px solid white;
+}
+.goButton {
+  width: 85px;
+  margin-left: 15px;
+  border-radius: 7px;
+}
+.locationButton {
+  width: 350px;
+  border-radius: 7px;
+}
+p {
+  color: white;
+  margin: 25px auto;
+  text-align: center;
+  font-size: 25px;
+}
+@media (max-width: 1000px) {
+  .formContainer {
+    min-width: 800px;
+    box-sizing: border-box;
+  }
+  section {
+    width: 90vw;
+  }
+  input {
+  min-width: 500px;
+  padding: 8px;
+  box-sizing: border-box;
+  }
+  .goButton {
+    width: 20vw;
+    margin-left: 5vw;
+  }
+  .locationButton {
+    width: 750px;
+  }
+  
+}
