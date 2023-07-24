@@ -22,7 +22,7 @@ nav form button {
 }
 .mainDivContainer{
   margin-top: 60px;
-  margin-bottom: 120px;
+  margin-bottom: 100px;
 }
 
 .mainSection {
@@ -242,6 +242,9 @@ footer {
   .weakyly {
     width: 90vw;
   }
+  .mainDivContainer{
+    margin-bottom: 120px;
+  }
   #currentWeather {
     width: 90vw;
   }
@@ -250,6 +253,11 @@ footer {
   }
   .homeCard div {
     display: flex;
+    flex-direction: column;
+  }
+  #weatherIcon{
+    display: block;
+    margin: auto;
   }
   .homeContainer {
     text-align: center;
