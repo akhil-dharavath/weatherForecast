@@ -1,1 +1,1 @@
-Link: https://akhildgithub.github.io/weatherForecast/
+Link: https://weatherforeacst-akhil.netlify.app/
